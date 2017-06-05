@@ -3888,8 +3888,17 @@ body.noscroll {
 }
 
     .sug-amount-presets {
-        display: block;
-        width: 100%;
+        display: table;
+        float:left;
+    }
+    
+    .sug-amount-presets > div {
+        display: table-cell;
+        padding-right: 8px;
+    }
+    
+    .sug-amount-presets > div:last-child{
+        padding-right:0px;
     }
     
     .sug-amount{
@@ -3903,4 +3912,37 @@ body.noscroll {
         color: #555;
         cursor: pointer;
     }
+    
+    .sug-amount:hover{
+        background-color: #f6f6f6;
+    }
+    
+    .sug-amount-other{
+        width:90px;
+        display: inline-block;
+        margin-left: 8px;
+    }
+    
+    .sug-amount.select-amount{
+        background-color: #18abc1;
+        color:#fff;
+        border-color:18abc1;
+        box-shadow: 1px 1px 1px #18abc1;
+    }
+    
+    .sug-amount.selected-amount:hover{
+        background-color: 18abc1;
+    }
+    
+    .fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear 1s linear;
+  -moz-transition: opacity .15s linear 1s linear;
+  -o-transition: opacity .15s linear 1s linear;
+  -ms-transition: opacity .15s linear 1s linear;
+  transition: opacity .15s linear 1s linear;
+}
+    .fade.in {
+  opacity: 1;
+}
 }
