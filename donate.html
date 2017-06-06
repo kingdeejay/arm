@@ -309,7 +309,82 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row"><div class="col-xs-12 col-sm-6"><label class="text-small fg-color-kgrey mb-40"><input type="checkbox" name="hideAmount" value="false" id="hideAmount"><!-- react-text: 35 --> <!-- /react-text --><!-- react-text: 36 -->Hide my donation amount<!-- /react-text --></label></div></div><div class="row"><div class="col-xs-12 required"><label>Your Name:</label></div><div class="col-xs-12 col-sm-6"><div class="form-group required"><label class="hide" for="firstName">First Name</label><input type="text" id="firstName" name="firstName" value="" class="form-control" placeholder="First Name"></div></div><div class="col-xs-12 col-sm-6"><div class="form-group required"><label class="hide" for="lastName">Last Name</label><input type="text" id="lastName" name="lastName" value="" class="form-control" placeholder="Last Name"></div></div></div><div class="row"><div class="col-xs-12 col-sm-6"><label class="text-small fg-color-kgrey mb-40"><input type="checkbox" name="hideName" value="false" id="hideName"><!-- react-text: 52 --> <!-- /react-text --><!-- react-text: 53 -->Hide my name<!-- /react-text --></label></div></div><div class="row"><div class="col-xs-12"><div class="form-group required"><label class="" for="email">Your Email:</label><input type="email" id="email" name="email" value="" class="form-control" maxlength="382" placeholder="Email Address"></div></div></div><div class="row"><div class="col-sm-6 col-md-offset-1"><div class="form-group form-group-stacked form-group-sm"><h5>Please subscribe me to </h5><div class="text-small fg-color-kgrey"><label class="text-small fg-color-kgrey"><input type="checkbox" name="updates" value="true" id="updates"><!-- react-text: 66 --> <!-- /react-text --><!-- react-text: 67 -->Updates related to this fundraiser<!-- /react-text --></label><br><label class="text-small fg-color-kgrey"><input type="checkbox" name="marketing" value="true" id="marketing"><!-- react-text: 71 --> <!-- /react-text --><!-- react-text: 72 -->Get updates from YouCaring<!-- /react-text --></label><br></div></div></div></div><div class="row"><div class="col-xs-12"><div class="form-group"><label for="message"><!-- react-text: 78 -->Include a Message with Your Donation <!-- /react-text --><sup>(optional)</sup></label><div class="{'input-group col-sm-12' + (touched &amp;&amp; error)}"><textarea id="message" name="message" class="form-control" maxlength="250" placeholder="Your story is so inspiring…keep up the fight!"></textarea></div></div></div></div><hr><div class="pb-20"><label>Total Donation:</label><p class="text-xlg text-currency  mb-0">$2.00</p><p class="text-sm"><!-- react-text: 87 --> <!-- /react-text --><!-- react-text: 88 -->$1.00<!-- /react-text --><!-- react-text: 89 --> donation + <!-- /react-text --><span class="btn-link text-underline fg-color-special-grey"><!-- react-text: 91 -->$1.00<!-- /react-text --><!-- react-text: 92 --> to YouCaring (recommended)<!-- /react-text --></span></p></div><input type="submit" value="Donate Now" class="text-uppercase btn btn-primary btn-xlg">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <label class="text-small fg-color-kgrey mb-40">
+                                        <input type="checkbox" name="hideAmount" value="false" id="hideAmount">Hide my donation amount
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 required">
+                                    <label>Your Name:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="form-group required">
+                                        <label class="hide" for="firstName">First Name</label>
+                                        <input type="text" id="firstName" name="firstName" value="" class="form-control" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="form-group required">
+                                        <label class="hide" for="lastName">Last Name</label>
+                                        <input type="text" id="lastName" name="lastName" value="" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <label class="text-small fg-color-kgrey mb-40">
+                                        <input type="checkbox" name="hideName" value="false" id="hideName">Hide my name
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group required">
+                                        <label class="" for="email">Your Email:</label>
+                                        <input type="email" id="email" name="email" value="" class="form-control" maxlength="382" placeholder="Email Address">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-offset-1">
+                                    <div class="form-group form-group-stacked form-group-sm">
+                                        <h5>Please subscribe me to </h5>
+                                        <div class="text-small fg-color-kgrey">
+                                            <label class="text-small fg-color-kgrey">
+                                                <input type="checkbox" name="updates" value="true" id="updates">Updates related to this fundraiser
+                                            </label>
+                                            <br>
+                                            <label class="text-small fg-color-kgrey">
+                                                <input type="checkbox" name="marketing" value="true" id="marketing">Get updates from YouCaring
+                                            </label>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label for="message">Include a Message with Your Donation <sup>(optional)</sup></label>
+                                        <div class="{'input-group col-sm-12' + (touched &amp;&amp; error)}">
+                                            <textarea id="message" name="message" class="form-control" maxlength="250" placeholder="Your story is so inspiring…keep up the fight!"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="pb-20">
+                                <label>Total Donation:</label>
+                                <p class="text-xlg text-currency  mb-0">$2.00</p><p class="text-sm">1.00 donation
+                                <span class="btn-link text-underline fg-color-special-grey">$1.00 to YouCaring (recommended)</span>
+                                </p>
+                            </div>
+                            <a target="_blank" href="#"  class="btn btn-red btn-donate">
+                                DONATE NOW <i class="glyphicon glyphicon-heart"></i>
+                            </a>            
                         </form>
                     </div> 
                 </div>
@@ -318,8 +393,8 @@
                     
                  
 
-                </div>
-            </div> 
+                </div>  <!-- END Donation Section -->
+            </div> <!-- END Wrapper -->
 
        <!--     <div class="section section-team-2" id="team">
                 <div class="container">

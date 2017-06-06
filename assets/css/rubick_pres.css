@@ -79,6 +79,10 @@ body > .navbar-collapse a {
   margin-top: 50px;
 }
 
+.text-align-right{
+    text-align: right;
+}
+
 .better-browser {
   max-width: 700px;
   margin: 200px auto;
@@ -239,6 +243,12 @@ body > .navbar-collapse a {
   filter: alpha(opacity=100);
 }
 
+.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;  
+}
 .form-control {
   background-color: #FFFFFF;
   border: 1px solid #DDDDDD;
@@ -249,13 +259,13 @@ body > .navbar-collapse a {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.form-control:focus {
+/*.form-control:focus {
   background-color: #FFFFFF;
   border: 1px solid #777777;
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0 !important;
-}
+}*/
 .has-success .form-control, .has-error .form-control, .has-success .form-control:focus, .has-error .form-control:focus {
   border-color: #E3E3E3;
   -webkit-box-shadow: none;
@@ -3574,6 +3584,124 @@ body.noscroll {
   display: block;
 }
 
+
+.sug-amount-wrapper {
+        width: 100%;
+        display: inline-block;
+        float:left;
+}
+
+    .sug-amount-presets {
+        display: table;
+        float:left;
+    }
+    
+    .sug-amount-presets > div {
+        display: table-cell;
+        padding-right: 8px;
+    }
+    
+    .sug-amount-presets > div:last-child{
+        padding-right:0px;
+    }
+    
+    .sug-amount{
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        padding: 14px 20px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        background-color:#eee;
+        color: #555;
+        cursor: pointer;
+    }
+    
+    .sug-amount:hover{
+        background-color: #f6f6f6;
+    }
+    
+    .sug-amount-other{
+        width:90px;
+        display: inline-block;
+        margin-left: 8px;
+    }
+    
+    .sug-amount.select-amount{
+        background-color: #18abc1;
+        color:#fff;
+        border-color:18abc1;
+        box-shadow: 1px 1px 1px #18abc1;
+    }
+    
+    .sug-amount.selected-amount:hover{
+        background-color: 18abc1;
+    }
+    
+  /*  .sug-amount.sug-amount-other.selected-amount{
+        box-shadow: none;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }*/
+   
+    span.input-group-addon{
+        border-color: #18abc1;
+        background-color: #18abc1;
+        color:#fff;
+    }
+    
+    .other-amount .validator-error{
+        margin-left: -330px;
+    }
+    
+    .row .other-amount input.form-control{
+        border-color: #18abc1;
+        height: 52px;
+    }
+    .input-currency.input-group .input-group-addon,
+    .input-group .input-group-addon{
+        font-size: 16px;
+        padding: 0 15px;
+        line-height: 0;
+    }
+    .input-currency span.input-group-addon{
+        border-radius:0 6px 6px 0;
+    }
+
+.input-currency span.input-group-addon:first-child{
+    border-radius: 6px 0 0 6px;
+}
+
+    .donate-form {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding:6px;    
+    }
+
+
+    
+    
+    .fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear 1s linear;
+  -moz-transition: opacity .15s linear 1s linear;
+  -o-transition: opacity .15s linear 1s linear;
+  -ms-transition: opacity .15s linear 1s linear;
+  transition: opacity .15s linear 1s linear;
+}
+
+.other-amount.fade{
+    width:230px;
+}
+    .fade.in {
+  opacity: 1;
+}
+
+
 @media (min-width: 768px) {
   .section-contact-3 {
     min-height: 570px;
@@ -3881,68 +4009,4 @@ body.noscroll {
     margin-top: 0;
   }
     
-.sug-amount-wrapper {
-        width: 100%;
-        display: inline-block;
-        float:left;
-}
-
-    .sug-amount-presets {
-        display: table;
-        float:left;
-    }
-    
-    .sug-amount-presets > div {
-        display: table-cell;
-        padding-right: 8px;
-    }
-    
-    .sug-amount-presets > div:last-child{
-        padding-right:0px;
-    }
-    
-    .sug-amount{
-        width: 100%;
-        text-align: center;
-        font-size: 16px;
-        padding: 14px 20px;
-        border-radius: 6px;
-        border: 1px solid #ccc;
-        background-color:#eee;
-        color: #555;
-        cursor: pointer;
-    }
-    
-    .sug-amount:hover{
-        background-color: #f6f6f6;
-    }
-    
-    .sug-amount-other{
-        width:90px;
-        display: inline-block;
-        margin-left: 8px;
-    }
-    
-    .sug-amount.select-amount{
-        background-color: #18abc1;
-        color:#fff;
-        border-color:18abc1;
-        box-shadow: 1px 1px 1px #18abc1;
-    }
-    
-    .sug-amount.selected-amount:hover{
-        background-color: 18abc1;
-    }
-    
-    .fade {
-  opacity: 0;
-  -webkit-transition: opacity .15s linear 1s linear;
-  -moz-transition: opacity .15s linear 1s linear;
-  -o-transition: opacity .15s linear 1s linear;
-  -ms-transition: opacity .15s linear 1s linear;
-  transition: opacity .15s linear 1s linear;
-}
-    .fade.in {
-  opacity: 1;
-}
 }
